@@ -59,4 +59,4 @@ Important: At first sight before I created any VMs, I executed the following com
 
 Further, I clone the repository in VMS and then executed ```install_requirements.sh``` file.
 
-This whole process is automated in ```test_case_<number>.sh``` files which you can find in test_cases_bash_scripts folder not in this repository but separately in submission.
+This whole process is automated in ```test_case_<number>.sh``` files which you can find in respective test case folders.
