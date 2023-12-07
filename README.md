@@ -1,6 +1,17 @@
 Name: Piyush Rajendra Chaudhari
 EmailID: piyrchau@iu.edu
 
+#### Architecture Diagram
+![image](https://github.com/piyush26c/Memcached-Lite---Key-Value-Store/assets/40906515/2120c934-1450-44ff-8c3a-937636a89b63)
+
+<br>
+
+#### Class Diagram
+![image](https://github.com/piyush26c/Memcached-Lite---Key-Value-Store/assets/40906515/e5f99183-a7af-433c-9de4-43ecf18fff70)
+
+
+
+```
 File Structure
 .
 ├── gcstorage_poc.py
@@ -34,18 +45,18 @@ File Structure
     └── client.py
 
 5 directories, 24 files
+```
 
 
+Note: If on a particular port number, server seems to be busy. Use the following command to free that port.
+```$npx kill-port <port-no>```
 
-Note: If on particular port number, server seems to be busy. Use following command to free that port.
-$npx kill-port <port-no>
+Important: At first sight before I created any VMs, I executed the following commands that set firewall rules
 
-Important: At first sight before I created any VMs, I executed following commands that setup firewall rules
+```gcloud compute networks create default```
 
-gcloud compute networks create default
+```gcloud compute firewall-rules create default-allow --network default --allow tcp,udp,icmp --source-ranges 0.0.0.0/0```
 
-gcloud compute firewall-rules create default-allow --network default --allow tcp,udp,icmp --source-ranges 0.0.0.0/0
+Further, I clone the repository in VMS and then executed ```install_requirements.sh``` file.
 
-I clone the repository in vms and then executed install_requirements.sh file.
-
-This whole process is automated in test_case_<number>.sh files which you can find in test_cases_bash_scripts folder not in this repository but separately in submission.
+This whole process is automated in ```test_case_<number>.sh``` files which you can find in test_cases_bash_scripts folder not in this repository but separately in submission.
