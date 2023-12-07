@@ -2,7 +2,6 @@ Name: Piyush Rajendra Chaudhari
 EmailID: piyrchau@iu.edu
 
 File Structure
-~/assignment_3_memcached_lite$ 
 .
 ├── gcstorage_poc.py
 ├── install_requirements.sh
